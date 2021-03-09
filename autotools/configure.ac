@@ -1,0 +1,19 @@
+AC_PREREQ([2.61])
+AC_INIT([example], [0.1], [joerg@thalheim.io])
+AM_INIT_AUTOMAKE([foreign])
+
+AC_PROG_MAKE_SET
+AC_PROG_CXX
+AC_LANG(C++)
+AX_LIB_SQLITE3([3.0.0])
+
+PKG_CHECK_MODULES([ZLIB], [zlib])
+
+AC_CONFIG_MACRO_DIR([m4])
+
+LT_PREREQ([2.2])
+LT_INIT([dlopen shared])
+
+AC_CONFIG_FILES([Makefile])
+
+AC_OUTPUT
