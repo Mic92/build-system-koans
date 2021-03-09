@@ -12,7 +12,7 @@ PKG_CHECK_MODULES([ZLIB], [zlib])
 AC_CONFIG_MACRO_DIR([m4])
 
 LT_PREREQ([2.2])
-LT_INIT([dlopen shared])
+LT_INIT([shared])
 
 AC_CONFIG_FILES([Makefile])
 
